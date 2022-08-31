@@ -1,0 +1,472 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E3C8282-5A53-460F-B2CD-708C68986BE7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>attendancemanagement</RootNamespace>
+    <AssemblyName>attendancemanagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44398</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="attendance1\.gitattributes" />
+    <Content Include="attendance1\.gitignore" />
+    <Content Include="attendance1\.git\ms-persist.xml" />
+    <Content Include="attendance1\attendance1.sln" />
+    <Content Include="attendance1\attendance1\attendance1.csproj.user" />
+    <Content Include="attendance1\attendance1\bin\attendance1.dll" />
+    <Content Include="attendance1\attendance1\bin\attendance1.pdb" />
+    <Content Include="attendance1\attendance1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="attendance1\attendance1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="attendance1\attendance1\bin\roslyn\csc.exe" />
+    <Content Include="attendance1\attendance1\bin\roslyn\csi.exe" />
+    <Content Include="attendance1\attendance1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\Microsoft.Win32.Primitives.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.AppContext.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Console.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Globalization.Calendars.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.IO.Compression.ZipFile.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Net.Http.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Net.Sockets.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="attendance1\attendance1\bin\roslyn\vbc.exe" />
+    <Content Include="attendance1\attendance1\bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="attendance1\attendance1\GuviProject\app.js" />
+    <Content Include="attendance1\attendance1\GuviProject\controllers\HeadersController.js" />
+    <Content Include="attendance1\attendance1\GuviProject\controllers\StudentsController.js" />
+    <Content Include="attendance1\attendance1\GuviProject\controllers\TeachersController.js" />
+    <Content Include="attendance1\attendance1\GuviProject\css\bootstrap.min.css" />
+    <Content Include="attendance1\attendance1\GuviProject\css\styles.css" />
+    <Content Include="attendance1\attendance1\GuviProject\img\bot.png" />
+    <Content Include="attendance1\attendance1\GuviProject\index.html" />
+    <Content Include="attendance1\attendance1\GuviProject\lib\angular-ui-router.js" />
+    <Content Include="attendance1\attendance1\GuviProject\lib\angular.js" />
+    <Content Include="attendance1\attendance1\GuviProject\partials\header.html" />
+    <Content Include="attendance1\attendance1\GuviProject\partials\home.html" />
+    <Content Include="attendance1\attendance1\GuviProject\partials\students.html" />
+    <Content Include="attendance1\attendance1\GuviProject\partials\teachers.html" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.gitattributes" />
+    <Content Include="attendance1\attendance1\GuviProject\services\StudentsFactory.js" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.gitattributes" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\Default.aspx" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\Signup.aspx" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\style1.css" />
+    <Content Include="attendance1\attendance1\obj\Debug\attendance1.csproj.FileListAbsolute.txt" />
+    <Content Include="attendance1\attendance1\obj\Debug\attendance1.dll" />
+    <Content Include="attendance1\attendance1\obj\Debug\attendance1.pdb" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csi.exe" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.AppContext.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Collections.Immutable.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Diagnostics.StackTrace.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.IO.FileSystem.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Reflection.Metadata.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.exe" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\VBCSCompiler.exe" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.exe" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.exe" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Win32.Primitives.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.AppContext.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Collections.Immutable.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Console.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.StackTrace.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Globalization.Calendars.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.Compression.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.Compression.ZipFile.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.FileSystem.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Net.Http.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Net.Sockets.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Reflection.Metadata.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Text.Encoding.CodePages.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.ValueTuple.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.ReaderWriter.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XmlDocument.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XPath.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XPath.XDocument.dll" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="attendance1\attendance1\GuviProject\Student\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="attendance1\attendance1\GuviProject\Student\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="attendance1\attendance1\GuviProject\Student\Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="attendance1\attendance1\GuviProject\Student\Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="attendance1\attendance1\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="attendance1\attendance1\Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="attendance1\.git\COMMIT_EDITMSG" />
+    <Content Include="attendance1\.git\config" />
+    <Content Include="attendance1\.git\description" />
+    <Content Include="attendance1\.git\FETCH_HEAD" />
+    <Content Include="attendance1\.git\HEAD" />
+    <Content Include="attendance1\.git\hooks\applypatch-msg.sample" />
+    <Content Include="attendance1\.git\hooks\commit-msg.sample" />
+    <Content Include="attendance1\.git\hooks\fsmonitor-watchman.sample" />
+    <Content Include="attendance1\.git\hooks\post-update.sample" />
+    <Content Include="attendance1\.git\hooks\pre-applypatch.sample" />
+    <Content Include="attendance1\.git\hooks\pre-commit.sample" />
+    <Content Include="attendance1\.git\hooks\pre-merge-commit.sample" />
+    <Content Include="attendance1\.git\hooks\pre-push.sample" />
+    <Content Include="attendance1\.git\hooks\pre-rebase.sample" />
+    <Content Include="attendance1\.git\hooks\pre-receive.sample" />
+    <Content Include="attendance1\.git\hooks\prepare-commit-msg.sample" />
+    <Content Include="attendance1\.git\hooks\push-to-checkout.sample" />
+    <Content Include="attendance1\.git\hooks\update.sample" />
+    <Content Include="attendance1\.git\index" />
+    <Content Include="attendance1\.git\info\exclude" />
+    <Content Include="attendance1\.git\logs\HEAD" />
+    <Content Include="attendance1\.git\logs\refs\heads\master" />
+    <Content Include="attendance1\.git\logs\refs\remotes\origin\master" />
+    <Content Include="attendance1\.git\objects\06\68d112744a6a59376ba5593a7da1f0ac612501" />
+    <Content Include="attendance1\.git\objects\0d\8bb54e5766cf048fdbea0312e030b8197bb0ba" />
+    <Content Include="attendance1\.git\objects\0e\ef898b58ce38ae6643e5afc1cf6d6af20bbdd0" />
+    <Content Include="attendance1\.git\objects\0f\8092ff2484abf9bd8446b9da1d09ae2c96b6b4" />
+    <Content Include="attendance1\.git\objects\14\2b0c865b8fcbce81c5dc92fae6c25dbaf5d3c9" />
+    <Content Include="attendance1\.git\objects\1a\6fc20a522cf99686bd5187de848c274adac449" />
+    <Content Include="attendance1\.git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <Content Include="attendance1\.git\objects\25\11a450f815f289fd0da6695e78413c12d55e90" />
+    <Content Include="attendance1\.git\objects\32\f5c1ef94bf049e5b9343d59a4bdb9450bbfcc0" />
+    <Content Include="attendance1\.git\objects\3d\c3282fc84e496a216819c344ca34c819f43a35" />
+    <Content Include="attendance1\.git\objects\3f\ee048f543f213d2f0354dd7c3bc6009dfd8c69" />
+    <Content Include="attendance1\.git\objects\40\c88ff216b77c90b54513a9ccc20f6a2a5b2a3f" />
+    <Content Include="attendance1\.git\objects\55\831b91067c5109ba8c758a9164161c3ddbd0bb" />
+    <Content Include="attendance1\.git\objects\55\d586f298b3db92a2c0f2f3d977c58173f19b54" />
+    <Content Include="attendance1\.git\objects\56\820d9cbc596cefe44d564958efaebfd88506ed" />
+    <Content Include="attendance1\.git\objects\57\c0117c1e7a807fb3a90edb65cf8312840317ef" />
+    <Content Include="attendance1\.git\objects\57\c62cca882e0958f0f97ac54fe765555bce14b6" />
+    <Content Include="attendance1\.git\objects\5f\26c897c232a0012d8f894c5ae2b108839b359f" />
+    <Content Include="attendance1\.git\objects\66\6e45743e2412f490dd002dbe1734834565f93f" />
+    <Content Include="attendance1\.git\objects\6b\5f9984764982c989330df792afe1dce2632dce" />
+    <Content Include="attendance1\.git\objects\74\063dcf0c8fe4fdeb8054df070f427a95c8d866" />
+    <Content Include="attendance1\.git\objects\8a\5998156e9b7bc3197113cfee9fcfe501dc6559" />
+    <Content Include="attendance1\.git\objects\94\91a2fda28342ab358eaf234e1afe0c07a53d62" />
+    <Content Include="attendance1\.git\objects\96\b45677e55a1920313fe1a8cfa39fc3b371fb6a" />
+    <Content Include="attendance1\.git\objects\97\a13fe76dab3e61cfd7a9a00bf06b9cd486cbb9" />
+    <Content Include="attendance1\.git\objects\99\3cd792c48486cb317d91bf77bd00f2476edb80" />
+    <Content Include="attendance1\.git\objects\9e\fc2810ea1074baf45a71d4bae3c033aee4b9fd" />
+    <Content Include="attendance1\.git\objects\bd\ae92c1564c02ea6e24b112d3a921a79e0e87dd" />
+    <Content Include="attendance1\.git\objects\c6\a9da2f7457819191316e161230f18d39585a93" />
+    <Content Include="attendance1\.git\objects\ce\aca67aaf954ad803a5a4456576e6e0cc0084e1" />
+    <Content Include="attendance1\.git\objects\d6\5c66b1ba297eeb3b5976b71c64c736b41bb763" />
+    <Content Include="attendance1\.git\objects\da\6e960b8d1e55c546e22c9868460f3b2c2027a0" />
+    <Content Include="attendance1\.git\objects\df\b3be6e40f27086eec254a573cb25b0723abbd3" />
+    <Content Include="attendance1\.git\objects\e5\0fa87a0b81a09b5253dd447e589758a71d89d4" />
+    <Content Include="attendance1\.git\objects\e6\6506fb3b45ee9396097f74faf25dede072bebd" />
+    <Content Include="attendance1\.git\objects\f0\d3a70ceaa69fb70811f58254dc738e0f939eac" />
+    <Content Include="attendance1\.git\objects\f1\af467b3f14426360e0dcc49a45de66dab39ae0" />
+    <Content Include="attendance1\.git\objects\fa\e9cfefa971636038d95909bb4fd0715b672af7" />
+    <Content Include="attendance1\.git\refs\heads\master" />
+    <Content Include="attendance1\.git\refs\remotes\origin\master" />
+    <Content Include="attendance1\.vs\attendance1\config\applicationhost.config" />
+    <Content Include="attendance1\.vs\attendance1\FileContentIndex\075f1a90-3198-4fa8-a9ab-33e0336bbf5d.vsidx" />
+    <Content Include="attendance1\.vs\attendance1\FileContentIndex\1987d826-8020-496e-a4b5-3f142feafdcf.vsidx" />
+    <Content Include="attendance1\.vs\attendance1\FileContentIndex\70f2915a-9387-4c6f-a51c-7d00fec06b2d.vsidx" />
+    <Content Include="attendance1\.vs\attendance1\FileContentIndex\a2f56ef2-3d75-4331-a7cd-34cdc192a7ad.vsidx" />
+    <Content Include="attendance1\.vs\attendance1\FileContentIndex\read.lock" />
+    <Content Include="attendance1\.vs\attendance1\v17\.suo" />
+    <Content Include="attendance1\attendance1\attendance1.csproj" />
+    <Content Include="attendance1\attendance1\bin\attendance1.dll.config" />
+    <Content Include="attendance1\attendance1\bin\roslyn\csc.exe.config" />
+    <Content Include="attendance1\attendance1\bin\roslyn\csc.rsp" />
+    <Content Include="attendance1\attendance1\bin\roslyn\csi.exe.config" />
+    <Content Include="attendance1\attendance1\bin\roslyn\csi.rsp" />
+    <Content Include="attendance1\attendance1\bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="attendance1\attendance1\bin\roslyn\Microsoft.Managed.Core.targets" />
+    <Content Include="attendance1\attendance1\bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="attendance1\attendance1\bin\roslyn\vbc.exe.config" />
+    <Content Include="attendance1\attendance1\bin\roslyn\vbc.rsp" />
+    <Content Include="attendance1\attendance1\bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\COMMIT_EDITMSG" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\config" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\description" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\FETCH_HEAD" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\HEAD" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\hooks\applypatch-msg.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\hooks\commit-msg.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\hooks\fsmonitor-watchman.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\hooks\post-update.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\hooks\pre-applypatch.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\hooks\pre-commit.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\hooks\pre-merge-commit.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\hooks\pre-push.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\hooks\pre-rebase.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\hooks\pre-receive.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\hooks\prepare-commit-msg.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\hooks\push-to-checkout.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\hooks\update.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\index" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\info\exclude" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\logs\HEAD" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\logs\refs\heads\main" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\logs\refs\remotes\origin\HEAD" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\logs\refs\remotes\origin\main" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\objects\54\ed268355fc75f034349f18afa6e894a3a6cd01" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\objects\87\6a56cee28e186c871763a4713f97a81f9d0021" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\objects\87\a2e873451a21094456b983effb1baa42ab71fb" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\objects\df\e0770424b2a19faf507a501ebfc23be8f54e7b" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\refs\heads\main" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\refs\remotes\origin\HEAD" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\.git\refs\remotes\origin\main" />
+    <Content Include="attendance1\attendance1\GuviProject\Project\README.md" />
+    <Content Include="attendance1\attendance1\GuviProject\README.md" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\COMMIT_EDITMSG" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\config" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\description" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\FETCH_HEAD" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\HEAD" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\hooks\applypatch-msg.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\hooks\commit-msg.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\hooks\fsmonitor-watchman.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\hooks\post-update.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\hooks\pre-applypatch.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\hooks\pre-commit.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\hooks\pre-merge-commit.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\hooks\pre-push.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\hooks\pre-rebase.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\hooks\pre-receive.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\hooks\prepare-commit-msg.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\hooks\push-to-checkout.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\hooks\update.sample" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\index" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\info\exclude" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\logs\HEAD" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\logs\refs\heads\main" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\logs\refs\remotes\origin\main" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\objects\34\d42b796ace4c7b98da40b34b10b039b3ab4bcf" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\objects\c3\f39d1b189536a74cd6469ccdb6e4314099a655" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\objects\df\e0770424b2a19faf507a501ebfc23be8f54e7b" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\objects\fb\516886de339aeecc155915538e024ebe50acaa" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\refs\heads\main" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\.git\refs\remotes\origin\main" />
+    <Content Include="attendance1\attendance1\GuviProject\Student\README.md" />
+    <Content Include="attendance1\attendance1\obj\Debug\attendance1.csproj.AssemblyReference.cache" />
+    <Content Include="attendance1\attendance1\obj\Debug\attendance1.csproj.CoreCompileInputs.cache" />
+    <Content Include="attendance1\attendance1\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="attendance1\attendance1\packages.config" />
+    <Content Include="attendance1\attendance1\Web.config" />
+    <None Include="attendance1\attendance1\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="attendance1\attendance1\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\.signature.p7s" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\app.config.install.xdt" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\app.config.uninstall.xdt" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\web.config.install.xdt" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\web.config.uninstall.xdt" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\app.config.install.xdt" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\app.config.uninstall.xdt" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\web.config.install.xdt" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\web.config.uninstall.xdt" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1.nupkg" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\net45\install.ps1" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\net45\uninstall.ps1" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe.config" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.rsp" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csi.rsp" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CSharp.Core.targets" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.exe.config" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.rsp" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\VBCSCompiler.exe.config" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.exe.config" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.rsp" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.exe.config" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.rsp" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CSharp.Core.targets" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Managed.Core.targets" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe.config" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.rsp" />
+    <Content Include="attendance1\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe.config" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="attendance1\.git\objects\info\" />
+    <Folder Include="attendance1\.git\objects\pack\" />
+    <Folder Include="attendance1\.git\refs\tags\" />
+    <Folder Include="attendance1\.vs\attendance1\FileContentIndex\merges\" />
+    <Folder Include="attendance1\attendance1\GuviProject\Project\.git\objects\info\" />
+    <Folder Include="attendance1\attendance1\GuviProject\Project\.git\objects\pack\" />
+    <Folder Include="attendance1\attendance1\GuviProject\Project\.git\refs\tags\" />
+    <Folder Include="attendance1\attendance1\GuviProject\Student\.git\objects\info\" />
+    <Folder Include="attendance1\attendance1\GuviProject\Student\.git\objects\pack\" />
+    <Folder Include="attendance1\attendance1\GuviProject\Student\.git\refs\tags\" />
+    <Folder Include="attendance1\attendance1\obj\Debug\TempPE\" />
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51279</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44398/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
